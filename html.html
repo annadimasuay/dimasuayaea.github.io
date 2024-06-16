@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Daddy.</strong>
+                        <p>
+                            Happy Father's Day, Daddy! I hope you have a wonderful day filled with love. You're not perfect, you have your own flaws but you certainly done an amazing job being my father. I promise to do my best in school and make you and mommy proud! I will do my best to improve in school so that I can get my own McLaren. I love you so much, Daddy! I hope your restaurant thrives so that we can buy a car and visit other places and countries.      
+                    
+                         
+                            
+                I LOVE YOU!
+                        
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
